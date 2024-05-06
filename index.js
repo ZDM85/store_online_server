@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 app.use(
   cors({
     credentials: true,
-    origin: process.env.CLIENT_URL,
+    origin: process.env.API_URL,
   })
 );
 app.use(fileupload({}));
